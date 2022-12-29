@@ -121,3 +121,88 @@ body {
 .hour-row > td {
   padding: 0.25rem 0.5rem;
 }
+
+@media only screen and (max-width: 640px) {
+  .weather-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .weather-icon.large {
+    width: 80px;
+    height: 80px;
+  }
+
+  .label {
+    font-size: 0.6rem;
+  }
+
+  .value-sub-info {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-left {
+    border-right: none;
+    border-bottom: 2px solid hsl(200, 100%, 20%);
+  }
+
+  .header-current-temp {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+
+  .weather-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .weather-icon.large {
+    width: 60px;
+    height: 60px;
+  }
+
+  .label {
+    font-size: 0.6rem;
+  }
+
+  .value-sub-info {
+    font-size: 0.75rem;
+  }
+
+  .value-current-info {
+    font-size: 1rem;
+  }
+
+  .day-section {
+    grid-template-columns: repeat(auto-fit, 80px);
+  }
+
+  .day-card-day {
+    font-size: 0.75rem;
+  }
+
+  .hour-row > td:nth-child(4) {
+    visibility: hidden;
+    max-width: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .header-right {
+    width: 75%;
+  }
+
+  .hour-row > td:nth-child(5) {
+    visibility: hidden;
+    max-width: 0;
+    padding: 0;
+  }
+}
