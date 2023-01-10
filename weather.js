@@ -7,7 +7,7 @@ export function getWeather(lat, lon, timezone) {
       {
         params: {
           latitude: lat,
-          longitude: lat,
+          longitude: lon,
           timezone,
         },
       }
